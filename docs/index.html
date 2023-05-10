@@ -10,117 +10,246 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="alternate" type="application/rss+xml" title="Album 88 » Feed" href="https://wras.org/feed/" />
 	<link rel="alternate" type="application/rss+xml" title="Album 88 » Comments Feed" href="https://wras.org/comments/feed/" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syncopate|Source+Sans+Pro" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bruno+Ace+SC|Source+Sans+Pro|Oswald" type="text/css" />
 	<link rel="stylesheet" href="index.css" type="text/css" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<script src="https://kit.fontawesome.com/937de8c95f.js" crossorigin="anonymous"></script>
 </head>
-<body class="wras-body" id="wras-body">
-	<div class="wras-container" id="wras-container">
-		<header class="wras-header" id="wras-header">
+<body class="wras" id="wras">
+	<header class="wras-header" id="wras-header">
+		<div class="wras-header__top" id="wras-header__top">
+			<address class="wras-contact" id="wras-contact">
+				<a href="tel:+14044139727" class="wras-tele" id="wras-tele">
+					<i class="fa fa-phone"></i>
+					<span class="wras-tele__text" id="wras-tele__text">(404) 413-9727</span>
+				</a>
+			</address>
+			<div class="wras-mobile-search" id="wras-mobile-search">
+				<button class="wras-mobile-search__trigger" id="wras-mobile-search__trigger">
+					<i class="fa fa-search search-trigger__icon"></i>
+				</button>
+			</div>
+			<form action="/search" class="wras-search" id="wras-search">
+				<label for="wras-search__input" class="wras-search__label" id="wras-search__label">Search</label>
+				<div class="wras-search__input-wrapper" id="wras-search__input-wrapper">
+					<input type="search" class="wras-search__input" id="wras-search__input" />
+					<button type="submit" class="wras-search__submit" id="wras-search__submit">
+						<i class="fa fa-search search-icon"></i>
+					</button>
+				</div>
+				
+			</form>
+		</div>
+		<div class="wras-header__bottom" id="wras-header__bottom">
 			<section class="wras-branding" id="wras-branding">
 				<h1 class="wras-logo" id="wras-logo">
 					<a href="/wras" class="wras-logo__link" id="wras-logo__link">
-						<img src="assets/logos/wras-logo.png" alt="" class="wras-logo__image" id="wras-logo__image">
+						<img src="assets/logos/wras-logo.png" alt="WRAS 88.5 FM" class="wras-logo__image" id="wras-logo__image" />
 					</a>
 				</h1>
-				<div class="wras-tagline" id="wras-tagline">
-					<section class="wras-tagline__top" id="wras-tagline__top">
-						<p>Left on the Dial,</p>
-					</section>
-					<section class="wras-tagline__bottom" id="wras-tagline__bottom">
-						<p>Right on the Music</p>
+				<h2 class="wras-tagline" id="wras-tagline">
+					<span class="wras-tagline__top" id="wras-tagline__top">Left on the Dial, Right on the Music</span>
+					<span class="wras-tagline__bottom" id="wras-tagline__bottom">WRAS 88.5 FM</span>
+				</h2>
+			</section>
+			<nav class="wras-nav" id="wras-nav">
+				<div class="wras-mobile-nav__wrapper" id="wras-mobile-nav__wrapper">
+					<div class="wras-mobile-nav__trigger" id="wras-mobile-nav__trigger">
+						<button class="wras-mobile-nav__button" id="wras-mobile-nav__button">
+							<i class="fa fa-bars"></i>
+						</button>
+					</div>
+					<section class="wras-mobile-nav" id="wras-mobile-nav">
+						<button class="wras-mobile-nav__close" id="wras-mobile-nav__close">
+							<i class="fa fa-times"></i>
+						</button>
 					</section>
 				</div>
-			</section>
-			<nav class="wras-navigation" id="wras-navigation">
-				<ul class="wras-navigation__items" id="wras-navigation__items">
-					<li class="wras-navigation__item">
-						<a href="#" class="wras-navigation__link">Listen</a>
-						<div class="wras-subnav">
-							<ul class="wras-subnav__items">
+				<ul class="wras-nav__inner" id="wras-nav__inner">
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">Listen</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">1</a>
+									<a href="#" class="wras-subnav__link">Live</a>
 								</li>
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">2</a>
+									<a href="#" class="wras-subnav__link">Radio</a>
 								</li>
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">3</a>
+									<a href="#" class="wras-subnav__link">Online</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Archive</a>
 								</li>
 							</ul>
-						</div>
+						</nav>
 					</li>
-					<li class="wras-navigation__item">
-						<a href="#" class="wras-navigation__link">About</a>
-						<div class="wras-subnav">
-							<ul class="wras-subnav__items">
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">Programming</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">About Us</a>
+									<a href="#" class="wras-subnav__link">Schedule</a>
 								</li>
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">Staff</a>
+									<a href="#" class="wras-subnav__link">Podcasts</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Charts</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">WRASFest</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">Music</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Playlist</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Library</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Submissions</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Artist Features</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">Athletics</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Football</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Basketball</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">Affiliates</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
+								<li class="wras-subnav__item">
+									<a href="https://georgiastatesignal.com/" class="wras-subnav__link">Georgia State Signal</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="https://watchneon.com/" class="wras-subnav__link">NeoN</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="https://undergroundjournal.org/" class="wras-subnav__link">Underground</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="https://newsouthjournal.com/" class="wras-subnav__link">New South</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="https://pin.gsu.edu/organization/studentmedia" class="wras-subnav__link">Student Media</a>
+								</li>
+							</ul>
+						</nav>
+					</li>
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">About</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">About Us</a>
 								</li>
 								<li class="wras-subnav__item">
 									<a href="#" class="wras-subnav__link">History</a>
 								</li>
 								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Staff</a>
+								</li>
+								<li class="wras-subnav__item">
 									<a href="#" class="wras-subnav__link">Contact Us</a>
 								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Public File</a>
+								</li>
 							</ul>
-						</div>
+						</nav>
 					</li>
-					<li class="wras-navigation__item">
-						<a href="#" class="wras-navigation__link">Shows</a>
-						<div class="wras-subnav">
-							<ul class="wras-subnav__items">
+					<li class="wras-nav__item">
+						<div class="wras-nav__text">
+							<a href="#" class="wras-nav__link">More</a>
+							<button class="wras-subnav__toggle">
+								<i class="fa fa-chevron-down"></i>
+							</button>
+						</div>
+						<nav class="wras-subnav">
+							<ul class="wras-subnav__inner">
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">Schedule</a>
+									<a href="#" class="wras-subnav__link">Gallery</a>
 								</li>
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">2</a>
+									<a href="#" class="wras-subnav__link">PSAs</a>
 								</li>
 								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">3</a>
+									<a href="#" class="wras-subnav__link">Underwriting</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Advertising</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Careers</a>
+								</li>
+								<li class="wras-subnav__item">
+									<a href="#" class="wras-subnav__link">Shop</a>
 								</li>
 							</ul>
-						</div>
-					</li>
-					<li class="wras-navigation__item">
-						<a href="#" class="wras-navigation__link">Music</a>
-						<div class="wras-subnav">
-							<ul class="wras-subnav__items">
-								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">1</a>
-								</li>
-								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">2</a>
-								</li>
-								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">3</a>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li class="wras-navigation__item">
-						<a href="#" class="wras-navigation__link">More</a>
-						<div class="wras-subnav">
-							<ul class="wras-subnav__items">
-								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">1</a>
-								</li>
-								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">2</a>
-								</li>
-								<li class="wras-subnav__item">
-									<a href="#" class="wras-subnav__link">3</a>
-								</li>
-							</ul>
-						</div>
+						</nav>
 					</li>
 				</ul>
 			</nav>
+		</div>
+	</header>
+	<main class="wras-main" id="wras-main">
+		<header class="wras-main__header" id="wras-main__header">
+			<div class="wras-hero" id="wras-hero">Placeholder</div>
 		</header>
-		<main class="wras-content" id="wras-content"></main>
-	</div>
+	</main>
+	<footer class="wras-footer" id="wras-footer"></footer>
+	<script src="index.js" type="text/javascript"></script>
 </body>
 </html>
