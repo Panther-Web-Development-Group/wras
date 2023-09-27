@@ -152,6 +152,12 @@ textarea { resize: none; }
                     background-color: black;
                     color: white;
                 }
+
+                .navigation-button__link:hover {
+                    cursor: pointer;
+                    opacity: .85;
+
+                }
             }
         }
     
@@ -194,6 +200,11 @@ textarea { resize: none; }
             --nav-icon-display: none;
         }
     }
+
+    .navigation-toggle:hover {
+        cursor: pointer;
+        opacity: .85;
+    }
     
     #toggle-checkbox {
         display: none;
@@ -227,6 +238,7 @@ textarea { resize: none; }
             
             #search-submit:hover {
                 cursor: pointer;
+                opacity: .85;
             }
         }
     }
@@ -247,6 +259,10 @@ textarea { resize: none; }
                 display: block;
                 color: white;
                 text-decoration: none;
+            }
+
+            .nav-link:hover {
+                opacity: .85;
             }
         }
     }
