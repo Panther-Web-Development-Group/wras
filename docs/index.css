@@ -8,6 +8,8 @@
     }
 }
 
+textarea { resize: none; }
+
 #wras {
     margin: 0;
     padding: 0;
@@ -214,11 +216,17 @@
                 display: inline-block;
                 min-width: 300px;
                 padding: 0.7em 1em;
+                font-size: 18px;
+                height: 49px;
             }
 
             #search-submit {
                 font-size: 1em;
                 padding: 0.6em;
+            }
+            
+            #search-submit:hover {
+                cursor: pointer;
             }
         }
     }
