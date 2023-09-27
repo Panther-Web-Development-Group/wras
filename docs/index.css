@@ -16,7 +16,7 @@
 }
 
 #header {
-    --header-width: 100%;
+    --header-width: 100vw;
     --header-padding: 1.4em;
     --hero-min-height: 500px;
     --nav-position-type: absolute;
@@ -37,7 +37,7 @@
         display: flex;
         justify-content: space-between;
         padding: 0.8em var(--header-padding);
-        width: calc(var(--header-width) - (var(--header-padding) * 2));
+        width: calc(var(--header-width));
 
         position: var(--nav-position-type);
         top: 0;
