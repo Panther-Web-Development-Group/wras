@@ -11,10 +11,11 @@ function Header({ toggleDarkMode, isDarkMode, showHero = false }) {
 
     useEffect(() => {
         const observer = new IntersectionObserver(cb, { threshold: 0.2 });
-        if (navigationRef.current) observer.observe(navigationRef.current);
+        const navigation = navigationRef.current;
+        if (navigation) observer.observe(navigation);
 
         return () => {
-            if (navigationRef.current) observer.unobserve(navigationRef.current);
+            if (navigation) observer.unobserve(navigation);
         }
     }, [navigationRef]);
 
