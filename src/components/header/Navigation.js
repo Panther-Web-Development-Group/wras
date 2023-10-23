@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes, FaMoon, FaSun } from "react-icons/fa";
+import logo from "../../assets/logos/WRAS_Logo.png";
 import NavigationMenu from "./NavigationMenu";
 import Buttons from "./Buttons";
 
@@ -14,6 +15,7 @@ function Navigation({ toggleDarkMode, isDarkMode }) {
     const toggleNavigation = () => setShowNavigation(!showNavigation);
 
     useEffect(() => {
+        toggle(mobileMedia);
         mobileMedia.addEventListener("change", toggle);
         return () => mobileMedia.removeEventListener("change", toggle);
     }, [mobileMedia]);
@@ -23,7 +25,7 @@ function Navigation({ toggleDarkMode, isDarkMode }) {
             <section className="branding" id="branding">
                 <h1 className="logo" id="logo">
                     <a href="/" className="logo-link" id="logo-link">
-                        <img src="/assets/logos/WRAS_Logo.png" alt="WRAS 88.5 FM" className="logo-image" id="logo-image" />
+                        <img src={logo} alt="WRAS 88.5 FM" className="logo-image" id="logo-image" />
                     </a>
                 </h1>
                 <h2 className="tagline" id="tagline">

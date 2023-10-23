@@ -140,10 +140,35 @@
         visibility: visible;
         height: calc(100dvw - 100%);
     }
+
+    .buttons {
+        
+    }
 }
 
 #search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 0.6rem;
+}
 
+#search-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid currentColor;
+
+    #search-input {
+        flex-basis: 100%;
+        padding: 0.5rem 0.8rem;
+        border: none;
+    }
+
+    #search-submit {
+        border: none;
+        padding-inline: 0.5rem;
+        font-size: 1rem;
+    }
 }
 
 #navigation-menu {

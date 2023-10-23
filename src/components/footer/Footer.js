@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaTwitter } from 'react-icons/fa';
 import FooterSection from './FooterSection';
+import logo from "../../assets/logos/WRAS_Rectangle.jpg";
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +10,7 @@ function Footer() {
 			<header className="footer-title" id="footer-title">
 				<h2 className="footer-logo" id="footer-logo">
 					<a href="/" className="footer-logo__link" id="footer-logo__link">
-						<img src="/assets/logos/WRAS_Rectangle.jpg" className="footer-logo__image" id="footer-logo__image" alt="WRAS-FM 88.5" />
+						<img src={logo} className="footer-logo__image" id="footer-logo__image" alt="WRAS-FM 88.5" />
 					</a>
 				</h2>
 			</header>
