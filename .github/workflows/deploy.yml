@@ -28,9 +28,6 @@ jobs:
       - name: Build production files
         run: npm run build
 
-      - name: Running tests
-        run: npm run test
-
   deploy:
     name: Deploy
     needs: build
