@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/wras/static/css/main.4183e9c7.css",
-    "main.js": "/wras/static/js/main.4ff8c117.js",
+    "main.css": "/wras/static/css/main.2ef5b4b9.css",
+    "main.js": "/wras/static/js/main.d897ba79.js",
     "static/media/Uni_Sans_Italic.woff": "/wras/static/media/Uni_Sans_Italic.eba5d5f5d30eb3055952.woff",
     "static/media/Uni_Sans_Heavy_Italic.woff": "/wras/static/media/Uni_Sans_Heavy_Italic.baf9f1de3e95183f23f7.woff",
     "static/media/Uni_Sans.woff": "/wras/static/media/Uni_Sans.92269b8b007e6fb8ce56.woff",
@@ -12,11 +12,11 @@
     "static/media/Uni_Sans_Heavy.woff2": "/wras/static/media/Uni_Sans_Heavy.51d1065d2622b4e302ee.woff2",
     "static/media/WRAS_Logo.png": "/wras/static/media/WRAS_Logo.fcc188e4d9c05207ef7f.png",
     "index.html": "/wras/index.html",
-    "main.4183e9c7.css.map": "/wras/static/css/main.4183e9c7.css.map",
-    "main.4ff8c117.js.map": "/wras/static/js/main.4ff8c117.js.map"
+    "main.2ef5b4b9.css.map": "/wras/static/css/main.2ef5b4b9.css.map",
+    "main.d897ba79.js.map": "/wras/static/js/main.d897ba79.js.map"
   },
   "entrypoints": [
-    "static/css/main.4183e9c7.css",
-    "static/js/main.4ff8c117.js"
+    "static/css/main.2ef5b4b9.css",
+    "static/js/main.d897ba79.js"
   ]
 }
