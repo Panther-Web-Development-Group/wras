@@ -2,7 +2,7 @@
 	"name": "wras",
 	"version": "0.1.5",
 	"private": true,
-	"homepage": "./",
+	"homepage": "https://panther-web-development-group.github.io/wras",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.14.1",
 		"@testing-library/react": "^13.0.0",
