@@ -60,9 +60,9 @@
     align-items: center;
     gap: 0.6rem;
 
-    &.active #navigation-dropdown {
+    /* &.active #navigation-dropdown {
         display: block;
-    }
+    } */
 
     .toggle {
         display: flex;
@@ -117,7 +117,7 @@
     flex-direction: column;
     gap: 0.5rem;
     align-items: center;
-    background-color: none;
+    background-color: transparent;
     top: -9999px;
     left: 0;
     right: 0;
@@ -185,7 +185,7 @@
         text-transform: uppercase;
         font-size: 1.3rem;
 
-        & > .navigation-link {
+        & .navigation-link {
             display: block;
             padding: 0.8rem;
             text-decoration: none;

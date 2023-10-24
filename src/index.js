@@ -25,7 +25,7 @@ const router = createBrowserRouter([
 			{ path: "/about", element: <About /> }
 		]
 	}
-], { basename: "/wras" });
+], { basename: "/" });
 
 root.render(
 	<React.StrictMode>
