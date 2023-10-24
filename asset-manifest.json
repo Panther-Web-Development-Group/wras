@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "./static/css/main.22d2bbb9.css",
-    "main.js": "./static/js/main.dcb010d2.js",
-    "static/media/Uni_Sans_Italic.woff": "./static/media/Uni_Sans_Italic.eba5d5f5d30eb3055952.woff",
-    "static/media/Uni_Sans_Heavy_Italic.woff": "./static/media/Uni_Sans_Heavy_Italic.baf9f1de3e95183f23f7.woff",
-    "static/media/Uni_Sans.woff": "./static/media/Uni_Sans.92269b8b007e6fb8ce56.woff",
-    "static/media/Uni_Sans_Heavy.woff": "./static/media/Uni_Sans_Heavy.a312e4503b6de89a9939.woff",
-    "static/media/Uni_Sans_Italic.woff2": "./static/media/Uni_Sans_Italic.a4c2fa77b3988d86ad03.woff2",
-    "static/media/Uni_Sans_Heavy_Italic.woff2": "./static/media/Uni_Sans_Heavy_Italic.130ca3f830edb158cce4.woff2",
-    "static/media/Uni_Sans.woff2": "./static/media/Uni_Sans.2953f944f4f38f396087.woff2",
-    "static/media/Uni_Sans_Heavy.woff2": "./static/media/Uni_Sans_Heavy.51d1065d2622b4e302ee.woff2",
-    "static/media/WRAS_Logo.png": "./static/media/WRAS_Logo.fcc188e4d9c05207ef7f.png",
-    "index.html": "./index.html",
-    "main.22d2bbb9.css.map": "./static/css/main.22d2bbb9.css.map",
-    "main.dcb010d2.js.map": "./static/js/main.dcb010d2.js.map"
+    "main.css": "/wras/static/css/main.4183e9c7.css",
+    "main.js": "/wras/static/js/main.d897ba79.js",
+    "static/media/Uni_Sans_Italic.woff": "/wras/static/media/Uni_Sans_Italic.eba5d5f5d30eb3055952.woff",
+    "static/media/Uni_Sans_Heavy_Italic.woff": "/wras/static/media/Uni_Sans_Heavy_Italic.baf9f1de3e95183f23f7.woff",
+    "static/media/Uni_Sans.woff": "/wras/static/media/Uni_Sans.92269b8b007e6fb8ce56.woff",
+    "static/media/Uni_Sans_Heavy.woff": "/wras/static/media/Uni_Sans_Heavy.a312e4503b6de89a9939.woff",
+    "static/media/Uni_Sans_Italic.woff2": "/wras/static/media/Uni_Sans_Italic.a4c2fa77b3988d86ad03.woff2",
+    "static/media/Uni_Sans_Heavy_Italic.woff2": "/wras/static/media/Uni_Sans_Heavy_Italic.130ca3f830edb158cce4.woff2",
+    "static/media/Uni_Sans.woff2": "/wras/static/media/Uni_Sans.2953f944f4f38f396087.woff2",
+    "static/media/Uni_Sans_Heavy.woff2": "/wras/static/media/Uni_Sans_Heavy.51d1065d2622b4e302ee.woff2",
+    "static/media/WRAS_Logo.png": "/wras/static/media/WRAS_Logo.fcc188e4d9c05207ef7f.png",
+    "index.html": "/wras/index.html",
+    "main.4183e9c7.css.map": "/wras/static/css/main.4183e9c7.css.map",
+    "main.d897ba79.js.map": "/wras/static/js/main.d897ba79.js.map"
   },
   "entrypoints": [
-    "static/css/main.22d2bbb9.css",
-    "static/js/main.dcb010d2.js"
+    "static/css/main.4183e9c7.css",
+    "static/js/main.d897ba79.js"
   ]
 }
