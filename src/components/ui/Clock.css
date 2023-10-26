@@ -1,0 +1,30 @@
+#clock {
+    font-family: "Uni Sans Heavy", Roboto, system-ui, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+    place-items: center;
+    gap: 1rem;
+    margin-block-start: 1rem;
+
+    .clock-date {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        .clock-dotw {
+            font-size: 1.3rem;
+        }
+    }
+
+    .clock-time {
+        font-size: 3rem;
+        text-align: center;
+
+        .clock-period {
+            margin-inline: 10px;
+        }
+    }
+}

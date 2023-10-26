@@ -1,0 +1,31 @@
+#content {
+    margin-inline: auto;
+}
+
+#content .row {
+    display: flex;
+    flex-direction: row;
+    
+    @media (width <= 768px) {
+        flex-direction: column;
+    }
+}
+
+#content .row > .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#content .page-section {
+    padding-inline: 2rem;
+    padding-block: 0.6rem;
+}
+
+#content .column-right {
+    max-width: 400px;
+
+    @media (width <= 768px) {
+        max-width: 100%;
+    }
+}
