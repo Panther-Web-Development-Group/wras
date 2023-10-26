@@ -17,10 +17,10 @@ const router = createBrowserRouter([
         ),
         children: [
             { index: true, element: <Home /> },
-			{ path: "/listen", element: <Listen /> },
-			{ path: "/programming", element: <Programming /> },
-			{ path: "/history", element: <History /> },
-			{ path: "/about", element: <About /> }
+			{ path: "/wras/listen", element: <Listen /> },
+			{ path: "/wras/programming", element: <Programming /> },
+			{ path: "/wras/history", element: <History /> },
+			{ path: "/wras/about", element: <About /> }
         ]
     }
 ], { basename: "/wras" });
