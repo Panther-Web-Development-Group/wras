@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function NavigationItem({ 
@@ -17,7 +17,7 @@ function NavigationItem({
     return (
         <li className={`navigation-item${className ? ` ${className}` : ""}`} key={name} {...props}>
             <div className="navigation-item__inner">
-                <a href={link} className="navigation-link">{name}</a>
+                <Link to={link} className="navigation-link">{name}</Link>
                 { hasChildren && 
                 <button className="navigation-toggle" onClick={toggleActive}>
                     { isActive ? <FaChevronUp /> : <FaChevronDown /> }
@@ -28,7 +28,7 @@ function NavigationItem({
                 { children.map(child => {
                     return (
                         <li className="navigation-level-2__item">
-                            <a href={child.link} className="navigation-level-2__link">{child.name}</a>
+                            <Link to={child.link} className="navigation-level-2__link">{child.name}</Link>
                         </li>
                     );
                 }) }

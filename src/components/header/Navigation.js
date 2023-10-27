@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import NavigationMenu from "./NavigationMenu";
 import Buttons from "./Buttons";
@@ -24,9 +25,9 @@ function Navigation({
         <>
             <section className="branding" id="branding">
                 <h1 className="logo" id="logo">
-                    <a href="/wras" className="logo-link" id="logo-link">
+                    <Link to="/" className="logo-link" id="logo-link">
                         <img src="/wras/assets/logos/WRAS_Logo.png" alt="WRAS 88.5 FM" className="logo-image" id="logo-image" />
-                    </a>
+                    </Link>
                 </h1>
                 <h2 className="tagline" id="tagline">
                     <span className="tagline-top" id="tagline-top">Left on the Dial</span>
@@ -44,11 +45,11 @@ function Navigation({
                     <NavigationMenu 
                         buttonsInNavigation={!buttonsOnNavigation}
                         items={[
-                            {name: "Listen", link: "/wras/listen"},
-                            {name: "Programming", link: "/wras/programming"},
-                            {name: "About", link: "/wras/about"},
-                            {name: "History", link: "/wras/history"},
-                            {name: "Contact", link: "/wras/contact"},
+                            {name: "Listen", link: "/listen"},
+                            {name: "Programming", link: "/programming"},
+                            {name: "About", link: "/about"},
+                            {name: "History", link: "/history"},
+                            {name: "Contact", link: "/contact"},
                             {name: "Public File", link: "https://publicfiles.fcc.gov/fm-profile/WRAS"}
                         ]}
                         className={navIsOpen ? "show" : ""} />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaInstagram, FaTwitter } from 'react-icons/fa';
 import FooterSection from './FooterSection';
-// import logo from "../../assets/logos/WRAS_Rectangle.jpg";
+// import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
 		<footer className="footer" id="footer">
 			<header className="footer-title" id="footer-title">
 				<h2 className="footer-logo" id="footer-logo">
-					<a href="/wras" className="footer-logo__link" id="footer-logo__link">
+					<a href="/wras/" className="footer-logo__link" id="footer-logo__link">
 						<img src="/wras/assets/logos/WRAS_Rectangle.jpg" className="footer-logo__image" id="footer-logo__image" alt="WRAS-FM 88.5" />
 					</a>
 				</h2>
@@ -18,19 +18,19 @@ function Footer() {
 				<FooterSection
 					title="Listen"
 					links={[
-						{ href: "/wras/programming", children: "Programming" },
-						{ href: "/wras/media", children: "Media" },
-						{ href: "/wras/charts", children: "Charts" },
-						{ href: "/wras/archives", children: "Archives" }
+						{ href: "/programming", children: "Programming" },
+						{ href: "/media", children: "Media" },
+						{ href: "/charts", children: "Charts" },
+						{ href: "/archives", children: "Archives" }
 					]} />
 				<FooterSection
 					title="WRAS-FM 88.5"
 					links={[
-						{ href: "/wras/about", children: "About" },
-						{ href: "/wras/contact", children: "Contact Us" },
-						{ href: "/wras/staff", children: "Staff" },
-						{ href: "/wras/affairs", children: "Affairs" },
-						{ href: "/wras/88sessions", children: "88 Sessions" },
+						{ href: "/about", children: "About" },
+						{ href: "/contact", children: "Contact Us" },
+						{ href: "/staff", children: "Staff" },
+						{ href: "/affairs", children: "Affairs" },
+						{ href: "/88sessions", children: "88 Sessions" },
 						{ href: "https://pin.gsu.edu/organization/wras-album-88", children: "Join Us" }
 					]} />
 				<FooterSection
@@ -47,14 +47,6 @@ function Footer() {
 						{ href: "#", children: <FaInstagram /> },
 						{ href: "#", children: <FaTwitter /> }
 					]} />
-				{/* <nav className="footer-section">
-					<h3 className="footer-section__title">Contact Us</h3>
-					<ul className="footer-links">
-						<li className="footer-item">
-							<a href="#" className="footer-link"></a>
-						</li>
-					</ul>
-				</nav> */}
 			</section>
 			<section className="footer-info" id="footer-info">
 				<address className="contact-info" id="contact-info">

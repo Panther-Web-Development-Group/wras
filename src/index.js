@@ -1,12 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import App from "./App";
-import { Home, Programming, ErrorPage, About, Listen, History } from './pages';
+import { 
+    Home, 
+    Programming, 
+    ErrorPage, 
+    About, 
+    Listen, 
+    History,
+    ContactPage
+} from './pages';
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.querySelector("#wras-root"));
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <App />,
@@ -17,13 +25,14 @@ const router = createBrowserRouter([
         ),
         children: [
             { index: true, element: <Home /> },
-			{ path: "/wras/listen", element: <Listen /> },
-			{ path: "/wras/programming", element: <Programming /> },
-			{ path: "/wras/history", element: <History /> },
-			{ path: "/wras/about", element: <About /> }
+			{ path: "/listen", element: <Listen /> },
+			{ path: "/programming", element: <Programming /> },
+			{ path: "/history", element: <History /> },
+			{ path: "/about", element: <About /> },
+            { path: "/contact", element: <ContactPage /> }
         ]
     }
-], { basename: "/wras" });
+], { basename: "/" });
 
 root.render(
     <React.StrictMode>

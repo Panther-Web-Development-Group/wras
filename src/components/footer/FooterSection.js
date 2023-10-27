@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function FooterSection({ 
     title = "",
     links = [],
@@ -13,7 +15,7 @@ function FooterSection({
                 {links.map(({ href = "#", children }) => {
                     return (
                         <li className="footer-item">
-                            <a href={href} className="footer-link">{children}</a>
+                            <Link to={href} className="footer-link">{children}</Link>
                         </li>
                     );
                 })}
